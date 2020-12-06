@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <table border="2px">
+        <thead>
+        <tr>
+            <td>lead</td>
+            <td>follow up</td>
+        </tr>
+        </thead>
+            {% for list in comp_list %}
+            <tbody>
+                <tr><td>{{ list.source_id_id }}.{{ list.source_id.source }}<br>{{ list.source_id.person_number }}</td>
+                    <td>{{ list.response }}-{{ list.date_of_follow_up }}</td>
+
+                </tr>
+            </tbody>
+
+
+    {% endfor %}
+         </table>
+</body>
+</html>
